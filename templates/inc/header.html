@@ -1,11 +1,13 @@
+{% load static %}
 <header>
     <nav>
         <div class="container">
             <div class="logo">
-                <img src="images/logo.svg" alt=""/>
+                <a href="/"><img src="{% static 'img/logo.svg' %}" alt=""/></a>
             </div>
             <div class="links">
-                <a href="index.html" onclick="menu()">Home</a>
+
+                <a href="{% url 'subscribe:subscribe' %}" style="text-decoration: none">Subscribe</a>
             </div>
             <span class="material-icons menu" onclick="menu()"> menu </span>
         </div>

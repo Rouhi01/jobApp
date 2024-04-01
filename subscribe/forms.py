@@ -6,12 +6,17 @@ class SubscribeForm(forms.ModelForm):
     class Meta:
         model = Subscribe
         fields = '__all__'
-        labels = {
-            'first_name': 'First name',
-        }
         error_messages = {
             'first_name':{
-                'required': 'You cannot move forward without first name!'
+                'required': 'First name is required!'
             },
+            'last_name':{
+                'required': 'Last name is required!'
+            },
+            'email':{
+                'required':'Email is required!'
+            },
+            'option':{
+                'option':'Option is required!'
+            }
         }
-        help_texts = {}

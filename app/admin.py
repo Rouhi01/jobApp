@@ -15,11 +15,13 @@ class Admin(admin.ModelAdmin):
         ('Basic information', {'fields': (
             'title',
             'description',
+            'salary',
+            'type'
         )}),
         ('More information', {
             'fields': (
-                ('salary', 'expired_at'),
-                'slug'),
+                ('location', 'author'),
+                'skills', 'slug'),
             'classes': ('collapse', 'wide')
         })
     )

@@ -4,33 +4,14 @@
         <div class="container">
             <div class="view-post">
                 <h1 class="jobtitle">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    {{ job.title }}
                 </h1>
-                <p class="location it">Location: <span>Bangladesh</span></p>
+                <p class="location it">Location: <span>{{ job.location.city }}</span></p>
                 <p class="status it">Type: <span>Full time</span></p>
-                <p class="budget it">Salary: <span>100$</span></p>
+                <p class="budget it">Salary: <span>{{ job.salary }}$</span></p>
                 <div class="desc">
                     <p class="details">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-                        incidunt iste? Totam sunt, in placeat animi reiciendis officiis
-                        maiores nostrum saepe iste adipisci voluptate libero ipsa
-                        deserunt. Ab, veritatis id.Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Modi, incidunt iste? Totam sunt, in placeat
-                        animi reiciendis officiis maiores nostrum saepe iste adipisci
-                        voluptate libero ipsa deserunt. Ab, veritatis id.Lorem ipsum dolor
-                        sit amet consectetur adipisicing elit. Modi, incidunt iste? Totam
-                        sunt, in placeat animi reiciendis officiis maiores nostrum saepe
-                        iste adipisci voluptate libero ipsa deserunt. Ab, veritatis
-                        id.Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-                        incidunt iste? Totam sunt, in placeat animi reiciendis officiis
-                        maiores nostrum saepe iste adipisci voluptate libero ipsa
-                        deserunt. Ab, veritatis id.Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Modi, incidunt iste? Totam sunt, in placeat
-                        animi reiciendis officiis maiores nostrum saepe iste adipisci
-                        voluptate libero ipsa deserunt. Ab, veritatis id.Lorem ipsum dolor
-                        sit amet consectetur adipisicing elit. Modi, incidunt iste? Totam
-                        sunt, in placeat animi reiciendis officiis maiores nostrum saepe
-                        iste adipisci voluptate libero ipsa deserunt. Ab, veritatis id.
+                        {{ job.description }}
                     </p>
                 </div>
             </div>
